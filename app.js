@@ -5,7 +5,9 @@ const AutoLoad = require('fastify-autoload')
 
 module.exports = function (fastify, opts, next) {
   // Place here your custom code!
-
+  fastify.register(require('fastify-cors'), { 
+    // put your options here
+  })
   // Do not touch the following lines
 
   // This loads all plugins defined in plugins
